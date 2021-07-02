@@ -9,6 +9,11 @@ n = 1899;
 
 % You need to return the following variables correctly.
 x = zeros(n, 1);
+for i = 1:n
+    if sum(word_indices == i) > 0
+        x(i) = 1;
+    end
+end
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Fill in this function to return a feature vector for the
